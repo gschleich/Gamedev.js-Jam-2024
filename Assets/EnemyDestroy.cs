@@ -9,8 +9,15 @@ public class EnemyDestroy : MonoBehaviour
         // Check if the colliding object has the "Player" tag
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Destroy this game object
-            Destroy(gameObject);
+            // Invoke the DestroyEnemy method after 1 second
+            Invoke("DestroyEnemy", 1f);
         }
+    }
+
+    // Method to destroy the enemy after a delay
+    private void DestroyEnemy()
+    {
+        // Destroy this game object
+        Destroy(transform.parent.gameObject);
     }
 }
