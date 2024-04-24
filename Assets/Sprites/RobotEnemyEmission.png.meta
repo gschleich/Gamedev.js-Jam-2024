@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 8a6a84d235895424ebdebbd24f2d294a
+guid: 3a492d57dcf3c4e5aa368f227b31fee1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RobotEnemy_0
+      name: RobotEnemyEmission_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f68217e45ed4e0fb34bcbaf00042a8
-      internalID: 258382596
+      spriteID: 4a951f3346be4499887eebb9bc35fb82
+      internalID: 1615864403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_1
+      name: RobotEnemyEmission_1
       rect:
         serializedVersion: 2
         x: 16
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 359e0a0aeae2c476fbbe79be6f9d455a
-      internalID: 250424004
+      spriteID: d8e7d789e51ec4453aee82b3c85fb0da
+      internalID: -963237116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_2
+      name: RobotEnemyEmission_2
       rect:
         serializedVersion: 2
         x: 32
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af505f8a43d64931bad44b30312ecee
-      internalID: 1404158026
+      spriteID: 192ec2d1bc1b2450090ac1d518e04eed
+      internalID: -969812041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_3
+      name: RobotEnemyEmission_3
       rect:
         serializedVersion: 2
         x: 48
@@ -200,14 +200,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73822a16fb0964d8888278103375a2fb
-      internalID: 986049487
+      spriteID: 9134f73ecee1340e794e10e217a8ff62
+      internalID: 591177579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_4
+      name: RobotEnemyEmission_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e847a26c54b417886b4fb11f574347
+      internalID: 1834356076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2efb8209b2a7404ba37194456fe336c
+      internalID: -640879872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036d4beb687ba40e583635be8675fbd4
+      internalID: -1557689513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7f23e276d0b4542a0919c13e12e695
+      internalID: -1406901392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_8
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef9cf0fe5ed6f432f8ecc9082f3ed23a
-      internalID: -806793990
+      spriteID: f7c57268954e44fd8bcf86e6b5d74d23
+      internalID: -66531831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_5
+      name: RobotEnemyEmission_9
       rect:
         serializedVersion: 2
         x: 16
@@ -242,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8301c812b394642ada1c8151f0e0984b
-      internalID: -1587908691
+      spriteID: 851da96bc28104efb8742448da272336
+      internalID: -175038546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_6
+      name: RobotEnemyEmission_10
       rect:
         serializedVersion: 2
         x: 32
@@ -263,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929a352889f03485a9d88c2c6b036726
-      internalID: -665810143
+      spriteID: 05656bc98ad764d16bca09ddcbd80429
+      internalID: 807999658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_7
+      name: RobotEnemyEmission_11
       rect:
         serializedVersion: 2
         x: 48
@@ -284,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74b5f0f8d84344ee1970d2b1042e0781
-      internalID: -1574978813
+      spriteID: 5299040e05aea498398b4d48db0b48f6
+      internalID: 840533291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_8
+      name: RobotEnemyEmission_12
       rect:
         serializedVersion: 2
         x: 64
@@ -305,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b74bed23ffd449428449c937f0e36f2
-      internalID: -1311285236
+      spriteID: 2ea104445e83e4382b82955a58ebd82a
+      internalID: 1537544104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_9
+      name: RobotEnemyEmission_13
       rect:
         serializedVersion: 2
         x: 80
@@ -326,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d97971adaaa24766ae1de76f8da8c33
-      internalID: 733861080
+      spriteID: ac1a989fbcb724dc1846603f110ac78a
+      internalID: -1271091339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_10
+      name: RobotEnemyEmission_14
       rect:
         serializedVersion: 2
         x: 96
@@ -347,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d3d6f3e268494100a3643f90ae7f334
-      internalID: 474159005
+      spriteID: cf3c8b26bb9e84a3db2aba39dc0fc8e2
+      internalID: 1832892787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_11
+      name: RobotEnemyEmission_15
       rect:
         serializedVersion: 2
         x: 112
@@ -368,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a779c482b40754c11b6162a355a71f3f
-      internalID: -314787247
+      spriteID: 05b8583b562704447803eeb0b1c5fb54
+      internalID: -1992850587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_12
+      name: RobotEnemyEmission_16
       rect:
         serializedVersion: 2
         x: 0
@@ -389,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a2fc1610ecfd4a388ed6f5f5e179b18
-      internalID: 317046093
+      spriteID: 57f188683d93a45e98213c70c25d3a97
+      internalID: 137126587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_13
+      name: RobotEnemyEmission_17
       rect:
         serializedVersion: 2
         x: 16
@@ -410,14 +494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43bfa4fd15b074459a787e779dcfcc92
-      internalID: 1767304353
+      spriteID: 993eccb362f354464a14294b09c4ca50
+      internalID: 2133166039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_14
+      name: RobotEnemyEmission_18
       rect:
         serializedVersion: 2
         x: 32
@@ -431,14 +515,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b542658e87f324579b7a8734cd8edc8e
-      internalID: -1437649466
+      spriteID: 45f6d392dfa4d4751954914fcf57e39f
+      internalID: 882446872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_15
+      name: RobotEnemyEmission_19
       rect:
         serializedVersion: 2
         x: 48
@@ -452,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 520922518d5ff488bb46dd0e42325ca1
-      internalID: -1162517278
+      spriteID: d5745a44f087e4bd4af4374edf0dfdd3
+      internalID: 754153903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RobotEnemy_16
+      name: RobotEnemyEmission_20
       rect:
         serializedVersion: 2
         x: 64
@@ -473,8 +557,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1874a507b550d4dc1adeb274525ebe2f
-      internalID: -594463658
+      spriteID: 9808c1935d8454911af7956474a98e8c
+      internalID: -9880246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c1c648ada874091997bca072714901
+      internalID: 1389560341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5678f95b6c35c41f095dbad5da0032db
+      internalID: 1822896130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotEnemyEmission_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd08c501d4f94fab8f41aac94ea7e90
+      internalID: -796567834
       vertices: []
       indices: 
       edges: []
@@ -490,23 +637,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RobotEnemy_0: 258382596
-      RobotEnemy_1: 250424004
-      RobotEnemy_10: 474159005
-      RobotEnemy_11: -314787247
-      RobotEnemy_12: 317046093
-      RobotEnemy_13: 1767304353
-      RobotEnemy_14: -1437649466
-      RobotEnemy_15: -1162517278
-      RobotEnemy_16: -594463658
-      RobotEnemy_2: 1404158026
-      RobotEnemy_3: 986049487
-      RobotEnemy_4: -806793990
-      RobotEnemy_5: -1587908691
-      RobotEnemy_6: -665810143
-      RobotEnemy_7: -1574978813
-      RobotEnemy_8: -1311285236
-      RobotEnemy_9: 733861080
+      RobotEnemyEmission_0: 1615864403
+      RobotEnemyEmission_1: -963237116
+      RobotEnemyEmission_10: 807999658
+      RobotEnemyEmission_11: 840533291
+      RobotEnemyEmission_12: 1537544104
+      RobotEnemyEmission_13: -1271091339
+      RobotEnemyEmission_14: 1832892787
+      RobotEnemyEmission_15: -1992850587
+      RobotEnemyEmission_16: 137126587
+      RobotEnemyEmission_17: 2133166039
+      RobotEnemyEmission_18: 882446872
+      RobotEnemyEmission_19: 754153903
+      RobotEnemyEmission_2: -969812041
+      RobotEnemyEmission_20: -9880246
+      RobotEnemyEmission_21: 1389560341
+      RobotEnemyEmission_22: 1822896130
+      RobotEnemyEmission_23: -796567834
+      RobotEnemyEmission_3: 591177579
+      RobotEnemyEmission_4: 1834356076
+      RobotEnemyEmission_5: -640879872
+      RobotEnemyEmission_6: -1557689513
+      RobotEnemyEmission_7: -1406901392
+      RobotEnemyEmission_8: -66531831
+      RobotEnemyEmission_9: -175038546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
