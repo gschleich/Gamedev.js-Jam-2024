@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyScan : MonoBehaviour
 {
+    public GameObject objectToCheck;
     public Transform pointA;
     public Transform pointB;
-    private Animator anim;
     public float speed;
 
     private bool movingToB = true;
@@ -15,28 +15,29 @@ public class EnemyScan : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
-        anim.SetBool("isRunning", true);
     }
 
     private void Update()
     {
-        if (movingToB)
+        if (objectToCheck.activeSelf)
         {
-            transform.position = Vector2.MoveTowards(transform.position, pointB.position, speed * Time.deltaTime);
-            if (Vector2.Distance(transform.position, pointB.position) < 0.1f)
+            if (movingToB)
             {
-                FlipSprite();
-                movingToB = false;
+                transform.position = Vector2.MoveTowards(transform.position, pointB.position, speed * Time.deltaTime);
+                if (Vector2.Distance(transform.position, pointB.position) < 0.1f)
+                {
+                    FlipSprite();
+                    movingToB = false;
+                }
             }
-        }
-        else
-        {
-            transform.position = Vector2.MoveTowards(transform.position, pointA.position, speed * Time.deltaTime);
-            if (Vector2.Distance(transform.position, pointA.position) < 0.1f)
+            else
             {
-                FlipSprite();
-                movingToB = true;
+                transform.position = Vector2.MoveTowards(transform.position, pointA.position, speed * Time.deltaTime);
+                if (Vector2.Distance(transform.position, pointA.position) < 0.1f)
+                {
+                    FlipSprite();
+                    movingToB = true;
+                }
             }
         }
     }
@@ -44,5 +45,22 @@ public class EnemyScan : MonoBehaviour
     private void FlipSprite()
     {
         spriteRenderer.flipX = !spriteRenderer.flipX;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check if the colliding object has the "Player" tag
+        if (collision.gameObject.CompareTag("EnemyChecker"))
+        {
+            // Invoke the DestroyEnemy method after 1 second
+            Invoke("DestroyEnemy", 1f);
+        }
+    }
+
+    // Method to destroy the enemy after a delay
+    private void DestroyEnemy()
+    {
+        // Destroy this game object
+        Destroy(transform.parent.gameObject);
     }
 }
