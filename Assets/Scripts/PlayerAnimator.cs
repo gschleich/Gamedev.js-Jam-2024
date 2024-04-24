@@ -1,4 +1,3 @@
-// NO JUMP ADDED
 using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
