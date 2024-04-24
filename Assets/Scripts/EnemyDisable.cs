@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyDisable : MonoBehaviour
 {
+    public GameObject RestartCollider;
     private Animator anim;
     public GameObject disableLight;
 
@@ -13,27 +14,29 @@ public class EnemyDisable : MonoBehaviour
         anim.SetBool("isRunning", true);
         anim.SetBool("isDisabled", false);
         disableLight.SetActive(true);
+        RestartCollider.SetActive(true);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the colliding object has the "Player" tag
-        if (collision.gameObject.CompareTag("Player") && anim.GetBool("isRunning"))
+        if (other.gameObject.CompareTag("Player") && anim.GetBool("isRunning"))
         {
-
             anim.SetBool("isRunning", false);
             anim.SetBool("isDisabled", true);
             disableLight.SetActive(false);
+            RestartCollider.SetActive(false);
 
-            Invoke("Start", 10f); // The off animation was 10 seconds.. maybe change to a var later
-            //Invoke("DestroyEnemy", 10f);
+            Invoke("RestartEnemy", 10f); // Restart enemy after 10 seconds
         }
     }
 
-    // Method to destroy the enemy after a delay
-    private void DestroyEnemy()
+    // Method to restart the enemy after a delay
+    private void RestartEnemy()
     {
-        // Destroy this game object
-        Destroy(transform.parent.gameObject);
+        anim.SetBool("isRunning", true);
+        anim.SetBool("isDisabled", false);
+        disableLight.SetActive(true);
+        RestartCollider.SetActive(true);
     }
 }
