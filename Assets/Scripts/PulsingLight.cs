@@ -1,5 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal; // This is needed for Light2D
+ // This is needed for Light2D
 
 public class PulsingLight : MonoBehaviour
 {
@@ -11,11 +13,11 @@ public class PulsingLight : MonoBehaviour
     private bool increasingIntensity = true; // Flag to track if intensity is increasing or decreasing
     private float timeSinceLastPulse = 0f; // Time elapsed since the last pulse
 
-    private Light2D light2D; // Reference to the Light2D component
+    private UnityEngine.Rendering.Universal.Light2D light2D; // Reference to the Light2D component
 
     void Start()
     {
-        light2D = GetComponent<Light2D>();
+        light2D = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         currentIntensity = minIntensity;
         light2D.intensity = currentIntensity;
     }
