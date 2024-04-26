@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour
 {
@@ -12,6 +13,18 @@ public class DontDestroy : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        // Check if the current scene is "Ending" and destroy the object if it is
+        if (SceneManager.GetActiveScene().name == "Ending")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
